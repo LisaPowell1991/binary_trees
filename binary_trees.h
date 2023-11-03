@@ -93,4 +93,25 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 /*Uncle*/
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
+/*Lowest common ancestor*/
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+
+/*Level-order traversal*/
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
+/*Is complete*/
+int binary_tree_is_complete(const binary_tree_t *tree);
+
+/*Rotate left*/
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+
+/*Rotate right*/
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+/*Is BST*/
+int binary_tree_is_bst(const binary_tree_t *tree);
+
+/*BST - Insert*/
+bst_t *bst_insert(bst_t **tree, int value);
+
 #endif /* _BINARY_TREES_H_ */
